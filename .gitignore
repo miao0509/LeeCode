@@ -18,5 +18,5 @@
 # IntelliJ project files
 .idea
 *.iml
-out
+out/
 gen

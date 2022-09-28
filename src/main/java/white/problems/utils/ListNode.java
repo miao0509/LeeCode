@@ -16,6 +16,15 @@ public class ListNode {
         this.val = val;
         this.next = next;
     }
+    public static ListNode creatArr(int[] arr) {
+        ListNode  head = new ListNode();
+        for (int j : arr) {
+            head.add(j);
+        }
+        return head.next;
+    }
+
+
     public void add(int newval) {
         ListNode newNode = new ListNode(newval);
         if(this.next == null)
@@ -31,4 +40,5 @@ public class ListNode {
             this.next.print();
         }
     }
+
 }
